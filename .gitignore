@@ -1,0 +1,8 @@
+# Samba lock and runtime files
+*.lck
+*.tdb
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
