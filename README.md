@@ -8,6 +8,9 @@
 
 ### Chapter 1 — The First NFS (Dell Optiplex 3050)
 
+![Day 1 — The server is alive](https://github.com/user-attachments/assets/7324c119-b734-4cfe-af7f-6deebaf188db)
+*Day 1: Dell Optiplex 3050 wall-mounted, RCA monitor showing CasaOS, containerd, and Immich services spinning up for the first time.*
+
 It all started with my **Dell Optiplex 3050** sitting at home running Ubuntu. I figured I could turn it into a Network File System (NFS) server and stop relying on expensive cloud subscriptions. I set up an NFS share, got it working, and it felt great — until I realised I could only access it when I was connected to my home Wi-Fi. The moment I left the house, I was cut off from all my files. Not exactly the "free cloud" dream I had in mind.
 
 ---
