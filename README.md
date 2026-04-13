@@ -14,7 +14,7 @@
    ┌─────┴────────────────── ┐
    │                         │
 Dell Optiplex 3050     Asus X556U Laptop
-(Ubuntu Server)        (Ubuntu Server)
+( Ubuntu 26.04 LTS)        (Ubuntu Server)
   - NFS Share            - NFS Share
   - CasaOS               - CasaOS
   - Immich               - Immich
