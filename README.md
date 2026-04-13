@@ -4,6 +4,26 @@
 
 ---
 
+## 🗺️ Architecture Overview
+
+```
+📱 iPhone / 💻 MacBook / 🖥️ Any Device
+         │
+    [Tailscale VPN — WireGuard mesh]
+         │
+   ┌─────┴──────┐
+   │            │
+Dell Optiplex 3050     Asus X556U Laptop
+(Ubuntu Server)        (Ubuntu Server)
+  - NFS Share            - NFS Share
+  - CasaOS               - CasaOS
+  - Immich               - Immich
+  - Pi-hole              - Portable SSD (931 GB)
+  217 GB storage         456 GB + 931 GB storage
+```
+
+---
+
 ## 📖 The Story
 
 ### Chapter 1 — The First NFS (Dell Optiplex 3050)
@@ -76,26 +96,6 @@ After testing everything thoroughly, I made the final call: **migrate both NFS s
 - ✅ **iCloud subscription: cancelled** 🎉
 
 **Total cost: $0/month.** Two old machines I already owned + free tiers of Tailscale and Pi-hole.
-
----
-
-## 🗺️ Architecture Overview
-
-```
-📱 iPhone / 💻 MacBook / 🖥️ Any Device
-         │
-    [Tailscale VPN — WireGuard mesh]
-         │
-   ┌─────┴──────┐
-   │            │
-Dell Optiplex 3050     Asus X556U Laptop
-(Ubuntu Server)        (Ubuntu Server)
-  - NFS Share            - NFS Share
-  - CasaOS               - CasaOS
-  - Immich                - Immich
-  - Pi-hole               - Portable SSD (931 GB)
-  217 GB storage          456 GB + 931 GB storage
-```
 
 ---
 
