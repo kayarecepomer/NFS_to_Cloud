@@ -28,7 +28,7 @@ Dell Optiplex 3050     Asus X556U Laptop
 
 ### Chapter 1 — The First NFS (Dell Optiplex 3050)
 
-![Day 1 — The server is alive](https://github.com/user-attachments/assets/7324c119-b734-4cfe-af7f-6deebaf188db)
+<img src="https://github.com/user-attachments/assets/7324c119-b734-4cfe-af7f-6deebaf188db" width="400" alt="Day 1 — The server is alive">
 *Day 1: Dell Optiplex 3050 wall-mounted, RCA monitor showing CasaOS, containerd, and Immich services spinning up for the first time.*
 
 It all started with my **Dell Optiplex 3050** sitting at home running Ubuntu. I figured I could turn it into a Network File System (NFS) server and stop relying on expensive cloud subscriptions. I set up an NFS share, got it working, and it felt great — until I realised I could only access it when I was connected to my home Wi-Fi. The moment I left the house, I was cut off from all my files. Not exactly the "free cloud" dream I had in mind.
@@ -49,12 +49,10 @@ But Cloudflare Tunnels felt like a workaround. What I really wanted was seamless
 
 | Device | Tailscale IP |
 |---|---|
-| mers-macbook-air | 100.127.131.63 |
-| dell-optiplex-3050 | 100.77.220.49 |
-| iphone-13 | 100.101.231.123 |
-| laptop (Asus X556U) | 100.115.153.57 |
-
-![Tailscale Devices](https://github.com/user-attachments/assets/68727150-c4f4-4e64-8ef1-222cfe300b52)
+| mers-macbook-air | `[redacted]` |
+| dell-optiplex-3050 | `[redacted]` |
+| iphone-13 | `[redacted]` |
+| laptop (Asus X556U) | `[redacted]` |
 
 ---
 
@@ -67,7 +65,7 @@ Raw NFS shares are functional but not pretty. I wanted something that felt like 
 - RAM: 41% (3.68 GB)
 - Storage: 43.82 GB used / 217.97 GB total ✅ Healthy
 
-![Dell Optiplex CasaOS](https://github.com/user-attachments/assets/0e574bf7-2353-4332-a70b-f7a85924f23e)
+<img src="https://github.com/user-attachments/assets/0e574bf7-2353-4332-a70b-f7a85924f23e" width="400" alt="Dell Optiplex CasaOS">
 
 **Asus X556U Laptop — CasaOS Dashboard:**
 - CPU: 15% @ 3.7W / 45°C
@@ -75,7 +73,7 @@ Raw NFS shares are functional but not pretty. I wanted something that felt like 
 - Internal Storage: 182.91 GB used / 456.35 GB total ✅ Healthy
 - Portable SSD: 176.74 GB used / 931.51 GB total
 
-![Asus X556U CasaOS](https://github.com/user-attachments/assets/1c24dd20-288f-45f5-8c13-cc088fb664db)
+<img src="https://github.com/user-attachments/assets/1c24dd20-288f-45f5-8c13-cc088fb664db" width="400" alt="Asus X556U CasaOS">
 
 ---
 
