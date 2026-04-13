@@ -1,18 +1,18 @@
-# SUDO — My Home Cloud Journey 🏠☁️
+# My Home Cloud Journey ☁️
 
 > *A personal diary of building a free, self-hosted, unlimited cloud from two old machines — ditching iCloud forever.*
 
 ---
 
-## 🗺️ Architecture Overview
+## Architecture Overview
 
 ```
-📱 iPhone / 💻 MacBook / 🖥️ Any Device
+ iPhone /  MacBook /  Any Device
          │
-    [Tailscale VPN — WireGuard mesh]
+    [Tailscale — WireGuard mesh]
          │
-   ┌─────┴──────┐
-   │            │
+   ┌─────┴────────────────── ┐
+   │                         │
 Dell Optiplex 3050     Asus X556U Laptop
 (Ubuntu Server)        (Ubuntu Server)
   - NFS Share            - NFS Share
@@ -24,11 +24,12 @@ Dell Optiplex 3050     Asus X556U Laptop
 
 ---
 
-## 📖 The Story
+##  The Story
 
 ### Chapter 1 — The First NFS (Dell Optiplex 3050)
 
 <img src="https://github.com/user-attachments/assets/7324c119-b734-4cfe-af7f-6deebaf188db" width="400" alt="Day 1 — The server is alive">
+
 *Day 1: Dell Optiplex 3050 wall-mounted, RCA monitor showing CasaOS, containerd, and Immich services spinning up for the first time.*
 
 It all started with my **Dell Optiplex 3050** sitting at home running Ubuntu. I figured I could turn it into a Network File System (NFS) server and stop relying on expensive cloud subscriptions. I set up an NFS share, got it working, and it felt great — until I realised I could only access it when I was connected to my home Wi-Fi. The moment I left the house, I was cut off from all my files. Not exactly the "free cloud" dream I had in mind.
@@ -47,7 +48,7 @@ But Cloudflare Tunnels felt like a workaround. What I really wanted was seamless
 
 **Current Tailscale network:**
 
-| Device | Tailscale IP |
+| Device |`[redacted]`  |
 |---|---|
 | mers-macbook-air | `[redacted]` |
 | dell-optiplex-3050 | `[redacted]` |
@@ -61,19 +62,15 @@ But Cloudflare Tunnels felt like a workaround. What I really wanted was seamless
 Raw NFS shares are functional but not pretty. I wanted something that felt like an actual cloud dashboard. I installed **CasaOS** on both servers — it gives a clean web UI to manage apps, storage, and system health from any browser. Then I added **Immich**, a self-hosted Google Photos alternative, so all my photos back up automatically and I can browse them from my iPhone just like iCloud Photos.
 
 **Dell Optiplex 3050 — CasaOS Dashboard:**
-- CPU: 5% @ 2.3W / 37°C
-- RAM: 41% (3.68 GB)
-- Storage: 43.82 GB used / 217.97 GB total ✅ Healthy
+- Storage: 43.82 GB used / 217.97 GB total
 
-<img src="https://github.com/user-attachments/assets/0e574bf7-2353-4332-a70b-f7a85924f23e" width="400" alt="Dell Optiplex CasaOS">
+<img src="https://github.com/user-attachments/assets/0e574bf7-2353-4332-a70b-f7a85924f23e" width="200" alt="Dell Optiplex CasaOS">
 
 **Asus X556U Laptop — CasaOS Dashboard:**
-- CPU: 15% @ 3.7W / 45°C
-- RAM: 26% (7.64 GB)
-- Internal Storage: 182.91 GB used / 456.35 GB total ✅ Healthy
+- Internal Storage: 182.91 GB used / 456.35 GB total
 - Portable SSD: 176.74 GB used / 931.51 GB total
 
-<img src="https://github.com/user-attachments/assets/1c24dd20-288f-45f5-8c13-cc088fb664db" width="400" alt="Asus X556U CasaOS">
+<img src="https://github.com/user-attachments/assets/1c24dd20-288f-45f5-8c13-cc088fb664db" width="200" alt="Asus X556U CasaOS">
 
 ---
 
@@ -91,13 +88,13 @@ After testing everything thoroughly, I made the final call: **migrate both NFS s
 - ✅ Photo backup from iPhone via Immich (no iCloud needed)
 - ✅ Secure, encrypted connections via WireGuard/Tailscale
 - ✅ Ad-free home network via Pi-hole
-- ✅ **iCloud subscription: cancelled** 🎉
+- ✅ **iCloud subscription: cancelled** 
 
 **Total cost: $0/month.** Two old machines I already owned + free tiers of Tailscale and Pi-hole.
 
 ---
 
-## 🛠️ Tech Stack
+## What I used
 
 | Tool | Purpose |
 |---|---|
@@ -111,7 +108,7 @@ After testing everything thoroughly, I made the final call: **migrate both NFS s
 
 ---
 
-## 🔮 What's Next
+## Next Plans
 
 The servers are running great, but they're still manually managed. The next big step is **full automation using AI agents** — likely **OpenClaw** — to handle maintenance tasks, monitor system health, auto-organise files, and eventually make the whole setup truly hands-off.
 
@@ -122,7 +119,7 @@ The servers are running great, but they're still manually managed. The next big 
 
 ---
 
-## 💡 Lessons Learned
+## Lessons Learned
 
 1. **Start simple** — a basic NFS gets you 80% of the way there.
 2. **Tailscale is magic** — the easiest VPN setup I've ever done, and it just works everywhere including iPhone.
@@ -132,4 +129,3 @@ The servers are running great, but they're still manually managed. The next big 
 
 ---
 
-*— Recep Ömer Kaya*
