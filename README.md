@@ -11,15 +11,15 @@
          │
     [Tailscale — WireGuard mesh]
          │
-   ┌─────┴────────────────── ┐
-   │                         │
-Dell Optiplex 3050     Asus X556U Laptop
-( Ubuntu 26.04 LTS)        (Ubuntu Server)
-  - NFS Share            - NFS Share
-  - CasaOS               - CasaOS
-  - Immich               - Immich
-  - Pi-hole              - Portable SSD (931 GB)
-  217 GB storage         456 GB + 931 GB storage
+   ┌─────┴──────────────────────────────┐
+   │                │                   │
+Dell Optiplex 3050  Asus X556U Laptop   Raspberry Pi 4
+(Ubuntu 26.04 LTS) (Ubuntu Server)     (Ubuntu Server)
+  - NFS Share       - NFS Share         - NFS Share
+  - CasaOS          - CasaOS            - CasaOS
+  - Immich          - Immich            - Portable battery
+  - Pi-hole         - Portable SSD      - Wireless hard drive
+  217 GB storage    456 GB + 931 GB     (prototype)
 ```
 
 ---
@@ -94,6 +94,16 @@ After testing everything thoroughly, I made the final call: **migrate both NFS s
 
 ---
 
+### Chapter 7 — Raspberry Pi 4: The 3rd Cloud & Portable Server (Prototype)
+
+<img src="https://github.com/user-attachments/assets/6fbb01f4-e63d-4630-9982-55d64bdc3d3a" width="400" alt="Raspberry Pi 4 mounted on the wall in a clear acrylic case">
+
+I recently added a **Raspberry Pi 4** to the system as my **third cloud node**. It sits in a clear acrylic case with a cooling fan and heat sinks, wall-mounted and connected to the Tailscale network just like the other two servers.
+
+But then a new idea hit me: what if I made this Pi **portable**? Attach a battery pack, keep storage plugged in via USB, and it becomes a **wireless hard drive** I can carry anywhere — no wall socket needed. It is still a prototype and a work in progress, but the goal is a fully self-contained, pocket-sized cloud node that travels with me.
+
+---
+
 ## What I used
 
 | Tool | Purpose |
@@ -104,6 +114,7 @@ After testing everything thoroughly, I made the final call: **migrate both NFS s
 | **CasaOS** | Home cloud OS / web dashboard |
 | **Immich** | Self-hosted photo & video backup (iCloud replacement) |
 | **Pi-hole** | Network-level ad blocker & DNS sinkhole |
+| **Raspberry Pi 4** | 3rd cloud node & portable wireless hard drive (prototype) |
 | **Cloudflare Tunnels** | *(used early on, replaced by Tailscale)* |
 
 ---
