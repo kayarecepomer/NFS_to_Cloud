@@ -122,7 +122,7 @@ But then a new idea hit me: what if I made this Pi **portable**? Attach a batter
 ## Next Plans
 
 The servers are running great, but they're still manually managed. The next big step is **full automation using AI agents** — likely **OpenClaw** — to handle maintenance tasks, monitor system health, auto-organise files, and eventually make the whole setup truly hands-off.
-
+- I am currently trying to add access to ROKU devices
 - [ ] Integrate AI agent (OpenClaw) for automated server management
 - [ ] Automated health monitoring & alerts
 - [ ] Auto-organise and deduplicate photos in Immich
