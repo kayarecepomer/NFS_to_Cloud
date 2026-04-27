@@ -19,7 +19,7 @@ Dell Optiplex 3050  Asus X556U Laptop   Raspberry Pi 4
   - CasaOS          - CasaOS            - CasaOS
   - Immich          - Immich            - Portable battery
   - Pi-hole         - Portable SSD      - Wireless hard drive
-  217 GB storage    456 GB + 931 GB     (prototype)
+  217 GB storage    456 GB + 931 GB     
 ```
 
 ---
@@ -127,6 +127,7 @@ The servers are running great, but they're still manually managed. The next big 
 - [ ] Automated health monitoring & alerts
 - [ ] Auto-organise and deduplicate photos in Immich
 - [ ] Explore more self-hosted app deployments via CasaOS
+- [ ] Will add portable battery to the PI and make it portable
 
 ---
 
