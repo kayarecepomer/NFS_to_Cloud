@@ -128,6 +128,7 @@ The servers are running great, but they're still manually managed. The next big 
 - [ ] Auto-organise and deduplicate photos in Immich
 - [ ] Explore more self-hosted app deployments via CasaOS
 - [ ] Will add portable battery to the PI and make it portable
+- [ ] Found the battery now tring to mirror Tailscale to build my own mesh vpn
 
 ---
 
